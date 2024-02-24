@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: cv2-ambulance-ufe-deployment      # meno deployment-u od ktorého sa odvádza meno podu
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
         pod: cv2-ambulance-ufe-label    # tento riadok je len označenie štítku
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: ambulance-ufe-container # meno kontaineru - v pod-e ich môže byť viac
-        image: mirohudak/ambulance-ufe
+        image: hudakmshs/ambulance-ufe
         imagePullPolicy: Always
 
         ports:
