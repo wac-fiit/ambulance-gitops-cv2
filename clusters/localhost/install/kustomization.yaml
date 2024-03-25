@@ -17,3 +17,4 @@ patches:
 
 components:
   - ../../../components/version-developers
+  - https://github.com/wac-fiit/ambulance-webapi-cv2//deployments/kustomize/components/mongodb
